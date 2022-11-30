@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bb9e6a09-5d98-4be7-8ddc-8355b861095a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/GameObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Laser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Meteor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/MovingObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/PowerUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/PowerUpTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Size.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Ufo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphics/Animation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphics/Assets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphics/Loader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphics/Sound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphics/Text.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/input/KeyBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/input/MouseInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/JSONParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/ScoreData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/XMLParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/Window.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/math/Vector2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/states/GameState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/states/LoadingState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/states/MenuState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/states/ScoreState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/states/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/Button.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IEt0GNXkO3r0VBZjiNf31GBnuS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Window" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Window" />
+      <module name="JuegoNaveEspacial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Window" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb9e6a09-5d98-4be7-8ddc-8355b861095a" name="Changes" comment="" />
+      <created>1669758347336</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669758347336</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
