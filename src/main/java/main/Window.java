@@ -10,11 +10,10 @@ import states.State;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferStrategy;
-import java.io.Serial;
 
 
-public class Window extends JFrame implements Runnable {
-    @Serial
+public class Window extends JFrame implements Runnable{
+
     private static final long serialVersionUID = 1L;
 
     private Canvas canvas;
@@ -32,7 +31,8 @@ public class Window extends JFrame implements Runnable {
     private KeyBoard keyBoard;
     private MouseInput mouseInput;
 
-    public Window(){
+    public Window()
+    {
         setTitle("Space Ship Game");
         setSize(Constants.WIDTH, Constants.HEIGHT);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -100,7 +100,13 @@ public class Window extends JFrame implements Runnable {
     private void init()
     {
 
-        Thread loadingThread = new Thread(() -> Assets.init());
+        Thread loadingThread = new Thread(new Runnable() {
+
+            @Override
+            public void run() {
+                Assets.init();
+            }
+        });
 
 
 

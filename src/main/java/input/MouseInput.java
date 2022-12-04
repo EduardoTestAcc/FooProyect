@@ -2,7 +2,9 @@ package input;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-public class MouseInput extends MouseAdapter {
+
+public class MouseInput extends MouseAdapter{
+
     public static int X, Y;
     public static boolean MLB;
 

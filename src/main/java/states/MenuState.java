@@ -2,16 +2,18 @@ package states;
 
 import gameObjects.Constants;
 import graphics.Assets;
+import ui.Action;
 import ui.Button;
 
 import java.awt.*;
 import java.util.ArrayList;
 
-public class MenuState extends State {
+public class MenuState extends State{
+
     private ArrayList<Button> buttons;
 
     public MenuState() {
-        buttons = new ArrayList<>();
+        buttons = new ArrayList<Button>();
 
         buttons.add(new Button(
                 Assets.greyBtn,
@@ -19,7 +21,12 @@ public class MenuState extends State {
                 Constants.WIDTH / 2 - Assets.greyBtn.getWidth()/2,
                 Constants.HEIGHT / 2 - Assets.greyBtn.getHeight() * 2,
                 Constants.PLAY,
-                () -> State.changeState(new GameState())
+                new Action() {
+                    @Override
+                    public void doAction() {
+                        State.changeState(new GameState());
+                    }
+                }
         ));
 
         buttons.add(new Button(
@@ -28,7 +35,12 @@ public class MenuState extends State {
                 Constants.WIDTH / 2 - Assets.greyBtn.getWidth()/2,
                 Constants.HEIGHT / 2 + Assets.greyBtn.getHeight() * 2 ,
                 Constants.EXIT,
-                () -> System.exit(0)
+                new Action() {
+                    @Override
+                    public void doAction() {
+                        System.exit(0);
+                    }
+                }
         ));
 
         buttons.add(new Button(
@@ -37,7 +49,12 @@ public class MenuState extends State {
                 Constants.WIDTH / 2 - Assets.greyBtn.getWidth()/2,
                 Constants.HEIGHT / 2,
                 Constants.HIGH_SCORES,
-                () -> State.changeState(new ScoreState())
+                new Action() {
+                    @Override
+                    public void doAction() {
+                        State.changeState(new ScoreState());
+                    }
+                }
         ));
 
 

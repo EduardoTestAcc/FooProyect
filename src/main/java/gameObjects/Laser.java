@@ -7,7 +7,8 @@ import java.awt.*;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 
-public class Laser extends MovingObject {
+public class Laser extends MovingObject{
+
     public Laser(Vector2D position, Vector2D velocity, double maxVel, double angle, BufferedImage texture, GameState gameState) {
         super(position, velocity, maxVel, texture, gameState);
         this.angle = angle;

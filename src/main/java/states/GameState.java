@@ -14,13 +14,12 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.ArrayList;
 
-
 public class GameState extends State{
     public static final Vector2D PLAYER_START_POSITION = new Vector2D(Constants.WIDTH/2 - Assets.player.getWidth()/2,
             Constants.HEIGHT/2 - Assets.player.getHeight()/2);
 
     private Player player;
-    private ArrayList<MovingObject> movingObjects = new ArrayList<>();
+    private ArrayList<MovingObject> movingObjects = new ArrayList<MovingObject>();
     private ArrayList<Animation> explosions = new ArrayList<Animation>();
     private ArrayList<Message> messages = new ArrayList<Message>();
 
@@ -198,82 +197,100 @@ public class GameState extends State{
 
         switch(p) {
             case LIFE:
-                action = () -> {
+                action = new Action() {
+                    @Override
+                    public void doAction() {
 
-                    lives ++;
-                    messages.add(new Message(
-                            position,
-                            false,
-                            text,
-                            Color.GREEN,
-                            false,
-                            Assets.fontMed
-                    ));
+                        lives ++;
+                        messages.add(new Message(
+                                position,
+                                false,
+                                text,
+                                Color.GREEN,
+                                false,
+                                Assets.fontMed
+                        ));
+                    }
                 };
                 break;
             case SHIELD:
-                action = () -> {
-                    player.setShield();
-                    messages.add(new Message(
-                            position,
-                            false,
-                            text,
-                            Color.DARK_GRAY,
-                            false,
-                            Assets.fontMed
-                    ));
+                action = new Action() {
+                    @Override
+                    public void doAction() {
+                        player.setShield();
+                        messages.add(new Message(
+                                position,
+                                false,
+                                text,
+                                Color.DARK_GRAY,
+                                false,
+                                Assets.fontMed
+                        ));
+                    }
                 };
                 break;
             case SCORE_X2:
-                action = () -> {
-                    player.setDoubleScore();
-                    messages.add(new Message(
-                            position,
-                            false,
-                            text,
-                            Color.YELLOW,
-                            false,
-                            Assets.fontMed
-                    ));
+                action = new Action() {
+                    @Override
+                    public void doAction() {
+                        player.setDoubleScore();
+                        messages.add(new Message(
+                                position,
+                                false,
+                                text,
+                                Color.YELLOW,
+                                false,
+                                Assets.fontMed
+                        ));
+                    }
                 };
                 break;
             case FASTER_FIRE:
-                action = () -> {
-                    player.setFastFire();
-                    messages.add(new Message(
-                            position,
-                            false,
-                            text,
-                            Color.BLUE,
-                            false,
-                            Assets.fontMed
-                    ));
+                action = new Action() {
+                    @Override
+                    public void doAction() {
+                        player.setFastFire();
+                        messages.add(new Message(
+                                position,
+                                false,
+                                text,
+                                Color.BLUE,
+                                false,
+                                Assets.fontMed
+                        ));
+                    }
                 };
                 break;
             case SCORE_STACK:
-                action = () -> {
-                    score += 1000;
-                    messages.add(new Message(
-                            position,
-                            false,
-                            text,
-                            Color.MAGENTA,
-                            false,
-                            Assets.fontMed
-                    ));
+                action = new Action() {
+                    @Override
+                    public void doAction() {
+                        score += 1000;
+                        messages.add(new Message(
+                                position,
+                                false,
+                                text,
+                                Color.MAGENTA,
+                                false,
+                                Assets.fontMed
+                        ));
+                    }
                 };
                 break;
             case DOUBLE_GUN:
-                action = () -> {
-                    player.setDoubleGun();
-                    messages.add(new Message(
-                            position,
-                            false,
-                            text,
-                            Color.ORANGE,
-                            false,
-                            Assets.fontMed
-                    ));
+                action = new Action() {
+                    @Override
+                    public void doAction() {
+                        player.setDoubleGun();
+                        messages.add(new Message(
+                                position,
+                                false,
+                                text,
+                                Color.ORANGE,
+                                false,
+                                Assets.fontMed
+                        ));
+                    }
                 };
                 break;
             default:

@@ -10,7 +10,9 @@ import states.GameState;
 import java.awt.*;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
-public class Player extends MovingObject {
+
+public class Player extends MovingObject{
+
     private Vector2D heading;
     private Vector2D acceleration;
 
@@ -292,5 +294,4 @@ public class Player extends MovingObject {
     public boolean isSpawning() {return spawning;}
     public boolean isShieldOn() {return shieldOn;}
     public boolean isDoubleScoreOn() {return doubleScoreOn;}
-
 }

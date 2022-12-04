@@ -10,7 +10,8 @@ import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
-public class Ufo extends MovingObject {
+public class Ufo extends MovingObject{
+
     private ArrayList<Vector2D> path;
 
     private Vector2D currentNode;

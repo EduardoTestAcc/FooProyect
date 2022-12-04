@@ -10,7 +10,8 @@ import java.awt.*;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 
-public class PowerUp extends MovingObject{
+public class PowerUp extends MovingObject {
+
     private long duration;
     private Action action;
     private Sound powerUpPick;
@@ -62,4 +63,5 @@ public class PowerUp extends MovingObject{
 
         g2d.drawImage(typeTexture, at, null);
     }
+
 }

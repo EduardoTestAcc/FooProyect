@@ -1,8 +1,10 @@
 package input;
+
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public class KeyBoard implements KeyListener{
+
     private boolean[] keys = new boolean[256];
 
     public static boolean UP, LEFT, RIGHT, SHOOT;
@@ -35,4 +37,5 @@ public class KeyBoard implements KeyListener{
 
     @Override
     public void keyTyped(KeyEvent e) {}
+
 }

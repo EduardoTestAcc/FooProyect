@@ -4,44 +4,91 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb9e6a09-5d98-4be7-8ddc-8355b861095a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/GameObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Laser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Meteor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/MovingObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/PowerUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/PowerUpTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Size.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Ufo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphics/Animation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphics/Assets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphics/Loader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphics/Sound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphics/Text.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/input/KeyBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/input/MouseInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/JSONParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ScoreData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/XMLParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Window.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/math/Vector2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/states/GameState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/states/LoadingState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/states/MenuState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/states/ScoreState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/states/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/Button.java" afterDir="false" />
+    <list default="true" id="bb9e6a09-5d98-4be7-8ddc-8355b861095a" name="Changes" comment="adding files">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/effects/fire08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/effects/futureFont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/effects/shield1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/effects/shield2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/effects/shield3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/explosion/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/explosion/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/explosion/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/explosion/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/explosion/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/explosion/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/explosion/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/explosion/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/explosion/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/explosion/_Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fonts/futureFont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/lasers/_Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/lasers/laserBlue01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/lasers/laserGreen11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/lasers/laserRed01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/meteors/_Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/meteors/big1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/meteors/big2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/meteors/big3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/meteors/big4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/meteors/med1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/meteors/med2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/meteors/small1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/meteors/small2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/meteors/tiny1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/meteors/tiny2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/numbers/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/numbers/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/numbers/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/numbers/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/numbers/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/numbers/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/numbers/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/numbers/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/numbers/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/numbers/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/numbers/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/numbers/_Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/others/_Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/others/life.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/powers/doubleGun.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/powers/doubleScore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/powers/fastFire.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/powers/orb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/powers/shield.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/powers/star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ships/_Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ships/doubleGunPlayer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ships/player.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ships/ufo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sounds/backgroundMusic.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/blue_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ui/grey_button.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameObjects/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameObjects/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameObjects/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameObjects/Laser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Laser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameObjects/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameObjects/Meteor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Meteor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameObjects/MovingObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameObjects/MovingObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameObjects/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameObjects/PowerUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameObjects/PowerUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameObjects/PowerUpTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameObjects/PowerUpTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameObjects/Size.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Size.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameObjects/Ufo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameObjects/Ufo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphics/Animation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphics/Animation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphics/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphics/Assets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphics/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphics/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphics/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphics/Sound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/input/KeyBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/KeyBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/input/MouseInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/MouseInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/math/Vector2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/math/Vector2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/states/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/states/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/states/LoadingState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/states/LoadingState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/states/MenuState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/states/MenuState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/states/ScoreState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/states/ScoreState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/states/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/states/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/Button.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +108,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,9 +126,24 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-19",
+    "last_opened_file_path": "C:/Users/cedri/IdeaProjects/JuegoNaveEspacial/src/main/resources",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cedri\IdeaProjects\JuegoNaveEspacial\src\main\resources" />
+      <recent name="C:\Users\cedri\IdeaProjects\JuegoNaveEspacial\src\res\sounds" />
+      <recent name="C:\Users\cedri\IdeaProjects\JuegoNaveEspacial\src\res\lasers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cedri\IdeaProjects\JuegoNaveEspacial\src\main\resources" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Window" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Window" />
@@ -110,6 +173,14 @@
       <option name="presentableId" value="Default" />
       <updated>1669758347336</updated>
     </task>
+    <task id="LOCAL-00001" summary="adding files">
+      <created>1669770197861</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669770197861</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,10 +188,40 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding files" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding files" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.IOException" package="java.io" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -9,8 +9,8 @@ import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
+public abstract class MovingObject extends GameObject{
 
-public abstract class MovingObject extends GameObject {
     protected Vector2D velocity;
     protected AffineTransform at;
     protected double angle;
@@ -58,22 +58,16 @@ public abstract class MovingObject extends GameObject {
 
         Player p = null;
 
-        if(a instanceof Player){
+        if(a instanceof Player)
             p = (Player)a;
-        } else if(b instanceof Player){
+        else if(b instanceof Player)
             p = (Player)b;
-        }
 
-
-        if(p != null && p.isSpawning()){
+        if(p != null && p.isSpawning())
             return;
-        }
 
-
-        if(a instanceof Meteor && b instanceof Meteor){
+        if(a instanceof Meteor && b instanceof Meteor)
             return;
-        }
-
 
         if(!(a instanceof PowerUp || b instanceof PowerUp)){
             a.Destroy();
@@ -104,4 +98,5 @@ public abstract class MovingObject extends GameObject {
     }
 
     public boolean isDead() {return Dead;}
+
 }

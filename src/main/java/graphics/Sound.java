@@ -1,7 +1,11 @@
 package graphics;
+
+
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.FloatControl;
+
 public class Sound {
+
     private Clip clip;
     private FloatControl volume;
 
@@ -31,4 +35,5 @@ public class Sound {
     public void changeVolume(float value) {
         volume.setValue(value);
     }
+
 }

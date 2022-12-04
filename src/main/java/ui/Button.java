@@ -9,6 +9,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class Button {
+
     private BufferedImage mouseOutImg;
     private BufferedImage mouseInImg;
     private boolean mouseIn;
@@ -45,9 +46,9 @@ public class Button {
 
     public void draw(Graphics g) {
 
-        if (mouseIn) {
+        if(mouseIn) {
             g.drawImage(mouseInImg, boundingBox.x, boundingBox.y, null);
-        } else {
+        }else {
             g.drawImage(mouseOutImg, boundingBox.x, boundingBox.y, null);
         }
 
@@ -62,7 +63,6 @@ public class Button {
                 Assets.fontMed);
 
 
-
     }
-}
 
+}

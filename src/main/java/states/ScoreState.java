@@ -6,6 +6,7 @@ import graphics.Text;
 import io.JSONParser;
 import io.ScoreData;
 import math.Vector2D;
+import ui.Action;
 import ui.Button;
 
 import java.awt.*;
@@ -16,6 +17,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class ScoreState extends State{
+
     private Button returnButton;
 
     private PriorityQueue<ScoreData> highScores;
@@ -31,17 +33,29 @@ public class ScoreState extends State{
                 Assets.greyBtn.getHeight(),
                 Constants.HEIGHT - Assets.greyBtn.getHeight() * 2,
                 Constants.RETURN,
-                () -> State.changeState(new MenuState())
+                new Action() {
+                    @Override
+                    public void doAction() {
+                        State.changeState(new MenuState());
+                    }
+                }
         );
 
-        scoreComparator = (e1, e2) -> e1.getScore() < e2.getScore() ? -1: e1.getScore() > e2.getScore() ? 1: 0;
+        scoreComparator = new Comparator<ScoreData>() {
+            @Override
+            public int compare(ScoreData e1, ScoreData e2) {
+                return e1.getScore() < e2.getScore() ? -1: e1.getScore() > e2.getScore() ? 1: 0;
+            }
+        };
 
-        highScores = new PriorityQueue<>(10, scoreComparator);
+        highScores = new PriorityQueue<ScoreData>(10, scoreComparator);
 
         try {
             ArrayList<ScoreData> dataList = JSONParser.readFile();
 
-            highScores.addAll(dataList);
+            for(ScoreData d: dataList) {
+                highScores.add(d);
+            }
 
             while(highScores.size() > 10) {
                 highScores.poll();

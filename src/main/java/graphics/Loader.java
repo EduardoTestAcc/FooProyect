@@ -8,7 +8,9 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+
 public class Loader {
+
     public static BufferedImage ImageLoader(String path)
     {
         try {

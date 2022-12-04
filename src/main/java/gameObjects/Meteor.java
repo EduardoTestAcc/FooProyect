@@ -7,7 +7,8 @@ import java.awt.*;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 
-public class Meteor extends MovingObject {
+public class Meteor extends MovingObject{
+
     private Size size;
 
     public Meteor(Vector2D position, Vector2D velocity, double maxVel, BufferedImage texture, GameState gameState, Size size) {
@@ -89,7 +90,4 @@ public class Meteor extends MovingObject {
     public Size getSize(){
         return size;
     }
-
-
-
 }

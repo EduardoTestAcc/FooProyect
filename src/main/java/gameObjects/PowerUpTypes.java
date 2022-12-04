@@ -3,7 +3,9 @@ package gameObjects;
 import graphics.Assets;
 
 import java.awt.image.BufferedImage;
-public enum PowerUpTypes{
+
+
+public enum PowerUpTypes {
     SHIELD("SHIELD", Assets.shield),
     LIFE("+1 LIFE", Assets.life),
     SCORE_X2("SCORE x2", Assets.doubleScore),
@@ -18,5 +20,4 @@ public enum PowerUpTypes{
         this.text = text;
         this.texture = texture;
     }
-
 }

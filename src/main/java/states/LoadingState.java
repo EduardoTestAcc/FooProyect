@@ -7,7 +7,9 @@ import graphics.Text;
 import math.Vector2D;
 
 import java.awt.*;
+
 public class LoadingState extends State{
+
     private Thread loadingThread;
 
     private Font font;
@@ -15,7 +17,7 @@ public class LoadingState extends State{
     public LoadingState(Thread loadingThread) {
         this.loadingThread = loadingThread;
         this.loadingThread.start();
-        font = Loader.loadFont("/fonts/futureFont.ttf", 38);
+        font = Loader.loadFont("C:\\Users\\cedri\\IdeaProjects\\JuegoNaveEspacial\\ships\\fonts\\futureFont.ttf", 38);
     }
 
     @Override

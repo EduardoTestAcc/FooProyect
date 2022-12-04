@@ -5,8 +5,6 @@ import math.Vector2D;
 
 import java.awt.*;
 
-
-
 public class Message {
     private float alpha;
     private String text;
@@ -62,4 +60,6 @@ public class Message {
     }
 
     public boolean isDead() {return dead;}
+
+
 }

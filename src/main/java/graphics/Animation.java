@@ -4,9 +4,7 @@ import math.Vector2D;
 
 import java.awt.image.BufferedImage;
 
-
 public class Animation {
-
     private BufferedImage[] frames;
     private int velocity;
     private int index;
@@ -47,9 +45,5 @@ public class Animation {
     public BufferedImage getCurrentFrame(){
         return frames[index];
     }
-
-
-
-
 
 }

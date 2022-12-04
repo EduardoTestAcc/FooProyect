@@ -1,7 +1,9 @@
 package gameObjects;
+
 import javax.swing.filechooser.FileSystemView;
 
 public class Constants {
+
     // frame dimensions
 
     public static final int WIDTH = 1000;
