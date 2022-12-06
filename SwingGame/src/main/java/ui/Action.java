@@ -1,8 +1,7 @@
 package ui;
 
 public interface Action {
-    void doAction();
-
-
-
+	
+	public abstract void doAction();
+	
 }
