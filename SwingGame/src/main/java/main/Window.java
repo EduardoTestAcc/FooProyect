@@ -13,6 +13,7 @@ import input.KeyBoard;
 import input.MouseInput;
 import states.LoadingState;
 import states.State;
+import java.lang.System;
 
 
 public class Window extends JFrame implements Runnable{
@@ -100,7 +101,7 @@ public class Window extends JFrame implements Runnable{
 		bs.show();
 	}
 	
-	private void init()
+	public void init()
 	{
 		
 		Thread loadingThread = new Thread(new Runnable() {
@@ -137,26 +138,21 @@ public class Window extends JFrame implements Runnable{
 			if(delta >= 1)
 			{	
 				update((float) (delta * TARGETTIME * 0.000001f));
-				draw();
+				draw();	
 				delta --;
 				frames ++;
 			}
 			if(time >= 1000000000)
 			{
-
 				AVERAGEFPS = frames;
 				frames = 0;
 				time = 0;
-				
 			}
-			
-			
 		}
-		
 		stop();
 	}
 	
-	private void start(){
+	public void start(){
 		
 		thread = new Thread(this);
 		thread.start();
@@ -164,7 +160,7 @@ public class Window extends JFrame implements Runnable{
 		
 		
 	}
-	private void stop(){
+	public void stop(){
 		try {
 			thread.join();
 			running = false;

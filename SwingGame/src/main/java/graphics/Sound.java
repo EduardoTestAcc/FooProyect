@@ -6,7 +6,7 @@ import javax.sound.sampled.FloatControl;
 public class Sound {
 	
 	private Clip clip;
-	private FloatControl volume;
+	public FloatControl volume;
 	
 	public Sound(Clip clip) {
 		this.clip = clip;
