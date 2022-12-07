@@ -2,6 +2,9 @@ package graphics;
 
 import java.awt.Font;
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.stream.IntStream;
 
 import javax.sound.sampled.Clip;
 
@@ -139,6 +142,18 @@ public class Assets {
 	public static Clip loadSound(String path) {
 		count ++;
 		return Loader.loadSound(path);
+	}
+
+	public static BufferedImage[] loadImageArr(String path, int times){
+		Integer[] aux = new Integer[times];
+		aux = new ArrayList<>(IntStream.rangeClosed(1, 3).boxed().toList()).toArray(aux);
+		final Integer[] aux2 = aux;
+		BufferedImage[] dum = Arrays.asList(aux).stream()
+						.map(e ->
+									loadImage("assets/"+path+ 
+											(Arrays.asList(aux2).indexOf(e)+1)+"png"))
+						.toArray(BufferedImage[]::new);
+		return dum;
 	}
 	
 }

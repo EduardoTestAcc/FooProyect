@@ -31,7 +31,7 @@ public class Loader {
 				return null;
 			}
 	}
-	
+
 	public static Clip loadSound(String path) {
 		try {
 			Clip clip = AudioSystem.getClip();
