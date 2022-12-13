@@ -87,6 +87,7 @@ public class Assets {
 		
 		fontMed = loadFont("assets/fonts/futureFont.ttf", 20);
 		
+		//shieldEffect = loadImageArr("effects/shield", 3);
 		for(int i = 0; i < 3; i++)
 			shieldEffect[i] = loadImage("assets/effects/shield" + (i + 1) +".png"); 
 		
@@ -144,14 +145,13 @@ public class Assets {
 		return Loader.loadSound(path);
 	}
 
+
 	public static BufferedImage[] loadImageArr(String path, int times){
 		Integer[] aux = new Integer[times];
-		aux = new ArrayList<>(IntStream.rangeClosed(1, 3).boxed().toList()).toArray(aux);
-		final Integer[] aux2 = aux;
+		aux = new ArrayList<>(IntStream.rangeClosed(1, times).boxed().toList()).toArray(aux);
+        Integer[] aux2 = aux;
 		BufferedImage[] dum = Arrays.asList(aux).stream()
-						.map(e ->
-									loadImage("assets/"+path+ 
-											(Arrays.asList(aux2).indexOf(e)+1)+"png"))
+						.map(e ->"assets/"+path+ (aux2[e-1])+".png")
 						.toArray(BufferedImage[]::new);
 		return dum;
 	}
