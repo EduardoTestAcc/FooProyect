@@ -11,7 +11,7 @@ import graphics.Sound;
 import main.Window;
 import math.Vector2D;
 
-public class AssetsTest {
+public class GameTest {
     private static Window window;
     private static Sound sound;
     private static Vector2D vector;
